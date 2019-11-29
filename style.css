@@ -8,9 +8,9 @@ body {
 
 .topnav {
   overflow: hidden;
-	background-color: #f2f2f2;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .topnav a {
@@ -32,7 +32,9 @@ body {
   background-color: #ddd;
   color: white;
 }
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -45,7 +47,7 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #5bc0de;
   color: white;
   padding: 12px 20px;
@@ -55,18 +57,33 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #337ab7;
 }
 
 .container {
-	margin: 1%;
-	width: 98%;
+  margin: 1%;
+  width: 98%;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
+@media (min-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .col-25 {
   float: left;
   width: 25%;
@@ -88,32 +105,33 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
 }
 
-
-.edit-div{
+.edit-div {
   width: 50%;
   float: left;
 }
-.delete-div{
+.delete-div {
   width: 50%;
   float: right;
 }
-.edit-a{
+.edit-a {
   width: 100%;
   color: red;
 }
-.delete-a{
+.delete-a {
   width: 100% !important;
   color: #337ab7 !important;
 }
-#list-table{
-	overflow-x:auto;
-	display: none;
+#list-table {
+  overflow-x: auto;
+  display: none;
 }
 
 table {
@@ -123,9 +141,12 @@ table {
   border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
